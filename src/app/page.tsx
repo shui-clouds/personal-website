@@ -17,25 +17,25 @@ type ProjectHeadingType = {
 
 const projects: ProjectCardType[] = [
 	{
+		title: 'Fortnite Caching Solution',
+		path: '/fortnite-caching',
+		description:
+      'Solution to cache a variety of data ranging from static to highly dynamic content on Fortnite.com',
+		borderColours:
+      'bg-gradient-to-tr from-[#26deff] via-[#bc35ff] to-[#fc0bf8]',
+	},
+	{
 		title: 'ChatOps Platform 💬',
 		path: '/chatops',
 		description:
       'Centralized and extensible ChatOps platform for system monitoring, alerting and troubleshooting',
-		borderColours:
-      'bg-gradient-to-tr from-[#26deff] via-[#bc35ff] to-[#fc0bf8]',
+		borderColours: 'bg-gradient-to-r from-[#fc0bf8] via-[#ff195e] to-[#ff9626]',
 	},
 	{
 		title: 'Customer Portal Integration',
 		path: '/feedback-management',
 		description:
       'Solution for managing and tracking customer feedback and issues using internal PM tools',
-		borderColours: 'bg-gradient-to-r from-[#fc0bf8] via-[#ff195e] to-[#ff9626]',
-	},
-	{
-		title: 'AWS Private Bridge ☁️',
-		path: '/aws-bridge',
-		description:
-      'Secure, customizable reverse-proxy system for tunnelling traffic into internal network via signed URLs',
 		borderColours:
       'bg-gradient-to-tr from-[#fcb80b] via-[#ffda35] to-[#13d409]',
 	},
@@ -119,7 +119,7 @@ export default function Home() {
 						/>
 					</div>
 				</div>
-				<h2 className='text-3xl mt-16 mb-4 font-bold'>Project Highlight 🌟</h2>
+				<h2 className='text-3xl mt-16 mb-4 font-bold'>Work Highlight 🌟</h2>
 				<div className='grid grid-cols-1 lg:grid-cols-3 gap-4 mt-2 pb-4'>
 					{projects.map((project) => (
 						<ProjectCard key={project.title} project={project} />
