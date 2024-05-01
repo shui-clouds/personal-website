@@ -85,8 +85,8 @@ export default function Home() {
         <div className='flex flex-col-reverse sm:flex-row items-start justify-between'>
           <div className='flex flex-col sm:pr-16'>
             <h1 className='text-4xl sm:text-5xl font-bold'>Shui Shan 💫</h1>
-            <p className='italic mt-2 text-md text-gray-500'>apps & game dev 👾 music & animal lover 🍜</p>
-            <p className='mt-4 mb-8 text-lg'>Passionate about software engineering, pursuring challenges and collaborating with people.</p>
+            <p className='italic mt-2 text-md text-gray-500'>software engineer, game designer & developer 👩🏻‍💻🎮</p>
+            <p className='mt-4 mb-8 text-lg'>Passionate about engineering, building games & apps. Seeking ventures to learn and collaborate with people!</p>
             <a target='_blank' href='https://github.com/shui-clouds/' className='text-lg text-blue-500 underline'>@shui-clouds</a>
             <a target='_blank' href='https://www.linkedin.com/in/shuishan/' className='text-lg text-blue-500 underline'>/shuishan</a>
           </div>
