@@ -72,7 +72,7 @@ const ProjectCard = ({project}: {project: ProjectCardType}) => (
 )
 
 const ProjectHeading = ({project}: {project: ProjectHeadingType}) => (
-	<Link href={project.path} passHref>
+	<Link target='_blank' href={project.path} passHref>
 		<h2 className='cursor-pointer text-2xl font-medium hover:text-blue-800'>
 			{project.title}
 		</h2>
