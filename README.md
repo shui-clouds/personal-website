@@ -1,27 +1,25 @@
-# Next.js + Tailwind CSS Example
+# 👩🏻‍💻 My Personal Website (WIP)
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## 👩‍💻 Getting Started with development
+Have an up to date version of Node.js 14+ installed, ideally with yarn installed as well
 
-## Deploy your own
+Clone the repository
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+Open VSCode (optional) in this directory
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+Don't forget to install dependencies with `yarn`
 
-## How to use
+You can now run the next dev server with `yarn dev`
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Commands
+There are some useful commands (found inside package.json) that you can run to help you with development.
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+### `yarn dev`
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+Starts a development server. There is hot-reloading (changes apply without refresh) so you can easily view and test the app during dev.
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+### `yarn build`
+Creates a production-ready, optimized build of the website. Once the app is built, you can use yarn start (see below) to use it.
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+### `yarn start`
+Starts the production server. Please make sure to run yarn build first to build the latest version of the app before starting the prod server.
