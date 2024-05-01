@@ -41,19 +41,19 @@ const projects: ProjectCard[] = [
 
 const projectLinks: ProjectLink[] = [
   {
+    title: 'Game Analytics Portal 🎮',
+    description: 'Custom solution for feature flags, tracking & analysing player engagement, retention and monetization metrics in games',
+    path: 'https://github.com/shui-clouds/web-portal',
+  },
+  {
     title: 'Mangui 🏡',
     description: 'Tenancy & Property Management web app',
-    path: '/mangui',
+    path: 'https://github.com/shui-clouds/mangui',
   },
   {
     title: 'Chatty Chef 🧑‍🍳',
     description: 'CMS-powered Restaurant website for online ordering',
-    path: '/chatty-chef',
-  },
-  {
-    title: 'Unity Game 🎮',
-    description: 'Here are the biggest enterprise technology acquisitions of 2021 so far',
-    path: '/unity-dev',
+    path: 'https://github.com/aprets/Chatty-Chef',
   },
 ]
 
@@ -70,8 +70,8 @@ const ProjectCard = ({ project }: { project: ProjectCard }) => (
 )
 
 const ProjectLink = ({ project }: { project: ProjectLink }) => (
-  <Link href={project.path} passHref>
-    <a>
+  <Link className="{}" href={project.path} passHref>
+    <a target='_blank'>
       <h2 className='cursor-pointer text-2xl font-medium hover:text-blue-800'>{project.title}</h2>
       <p className='text-gray-700 dark:text-gray-400'>{project.description}</p>
     </a>
@@ -87,11 +87,11 @@ export default function Home() {
             <h1 className='text-4xl sm:text-5xl font-bold'>Shui Shan 💫</h1>
             <p className='italic mt-2 text-md text-gray-500'>apps & game dev 👾 music & animal lover 🍜</p>
             <p className='mt-4 mb-8 text-lg'>Passionate about software engineering, pursuring challenges and collaborating with people.</p>
-            <p className='text-lg'>@shui-clouds</p>
-            <p className='text-lg'>/shuishan</p>
+            <a target='_blank' href='https://github.com/shui-clouds/' className='text-lg text-blue-500 underline'>@shui-clouds</a>
+            <a target='_blank' href='https://www.linkedin.com/in/shuishan/' className='text-lg text-blue-500 underline'>/shuishan</a>
           </div>
           <div className="w-[100px] sm:w-[300px] mb-4 sm:mb-0">
-            <Image className='rounded-full' alt='Pixel Moutains' src={mountains} />
+            <Image className='rounded-full' alt='Pixel Mountains' src={mountains} />
           </div>
         </div>
         <h2 className='text-3xl mt-16 mb-4 font-bold'>
@@ -102,6 +102,9 @@ export default function Home() {
             <ProjectCard key={project.title} project={project} />
           ))}
         </div >
+        <h3 className='text-3xl mt-6 mb-4 font-semibold'>
+          Personal Projects 🚀
+        </h3>
         <div className='flex flex-col gap-5 mt-4'>
           {projectLinks.map((project) => (
             <ProjectLink key={project.title} project={project} />
